@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title  -->
+    <title>SERP Shark | SEO Guide</title>
+
+    <!-- icon -->
+    <link rel="icon" href="img/shark2.png" />
+
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- google font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@300;400;600;700;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- meta tags  -->
+    <meta
+      name="description"
+      content="A simple SEO guide covering SEO strategy, basics and practical steps to improve rankings and grow your website traffic."
+    />
+    <meta name="author" content="siyath" />
+    <meta name="application-name" content="SERP Shark" />
+    <!-- robots tag  -->
+    <link rel="robots" content="index,follow" />
+    <link rel="robots" content="max-image-preview:large" />
+
+    <!-- canonical tag  -->
+    <link rel="canonical" href="#" />
+
+    <!-- alternate tag -->
+    <link rel="alternate" hreflang="en" href="#" />
+
+    <!-- opengraph tag -->
+    <meta name="og:type" content="website" />
+    <meta name="og:site_name" content="SERP shark" />
+    <meta name="og:title" content="SERP Shark | SEO Guide" />
+    <meta
+      name="og:description"
+      content="A simple SEO guide covering SEO strategy, basics and practical steps to improve rankings and grow your website traffic."
+    />
+    <meta name="og:image" content="#" />
+    <meta name="og:url" content="#" />
+
+    <!-- twitter tag  -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SERP Shark | SEO Guide" />
+    <meta
+      name="twitter:description"
+      content="A simple SEO guide covering SEO strategy, basics and practical steps to improve rankings and grow your website traffic."
+    />
+    <meta name="twitter:image" content="#" />
+    <meta name="twitter:url" content="#" />
+
+    <!-- schema markup optimnization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Serp Shark",
+            "url": "https://yourdomain.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://yourdomain.com/logo.png"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "name": "Serp Shark",
+            "url": "https://yourdomain.com",
+            "description": "Serp Shark provides a complete SEO guide covering strategies, techniques, and practical methods to help beginners and professionals improve search engine rankings and grow online visibility.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Serp Shark"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "SEO Guide",
+            "url": "https://yourdomain.com",
+            "description": "Learn SEO with a complete step-by-step SEO guide including keyword research, on-page SEO, technical SEO, and link building strategies to boost your website ranking.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@type": "WebSite",
+              "url": "https://yourdomain.com"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://yourdomain.com/seo-guide-image.jpg"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" r id="cursorRing"></div>
+
+    <!-- ══════════════ NAVBAR ══════════════ -->
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">
+        <img src="img/shark2.png" alt="SERP Shark icon" />
+        <span class="nav-brand">SERP SHARK</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#what-is-seo">What is SEO</a></li>
+        <li><a href="#how-engines">How It Works</a></li>
+        <li><a href="#seo-types">SEO Types</a></li>
+        <li><a href="#why-seo">Why SEO</a></li>
+        <li><a href="#cta-strip" class="nav-cta">Get Started</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#what-is-seo" class="mob-link">What is SEO</a>
+      <a href="#how-engines" class="mob-link">How It Works</a>
+      <a href="#seo-types" class="mob-link">SEO Types</a>
+      <a href="#why-seo" class="mob-link">Why SEO</a>
+      <a href="#cta-strip" class="mob-link">Get Started</a>
+    </div>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section id="hero">
+      <div class="grid-floor"></div>
+
+      <div class="ring-wrap">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+
+      <div class="particles" id="particles"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span></span> SEO Intelligence Platform <span></span>
+        </div>
+        <h1 class="hero-title">
+          <span class="line1">SEO Guide For</span>
+          <span class="line2">Better RankinGs</span>
+        </h1>
+        <p class="hero-sub">
+          Master the ocean of organic search. SERP Shark teaches you everything
+          from crawling fundamentals to advanced ranking strategies — so you can
+          dominate every search result.
+        </p>
+        <div class="hero-buttons">
+          <button
+            class="btn-primary"
+            onclick="
+              document
+                .getElementById('what-is-seo')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            Dive Deep Into SEO
+          </button>
+          <button
+            class="btn-outline"
+            onclick="
+              document
+                .getElementById('seo-types')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            Explore SEO Types
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-count="93">0</span>
+            <div class="stat-label">% Traffic via Search</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="3">0</span>
+            <div class="stat-label">Billion Searches / Day</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="75">0</span>
+            <div class="stat-label">% Never Scroll Pg.2</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="14">0</span>
+            <div class="stat-label">× Higher ROI vs Paid</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ WHAT IS SEO ══════════════ -->
+    <section id="what-is-seo">
+      <div class="seo-grid">
+        <div class="seo-text-side scroll-reveal">
+          <span class="section-label">Foundation</span>
+          <h2 class="section-title">What is <span>SEO?</span></h2>
+          <p>
+            <strong>Search Engine Optimization (SEO)</strong> is the art and
+            science of increasing a website's visibility in organic (non-paid)
+            search engine results. It's not just about ranking — it's about
+            being found by the <em>right people</em> at the
+            <em>right moment</em> with the <em>right answer</em>.
+          </p>
+          <p>
+            Think of the internet as a vast ocean. Search engines like Google
+            are the navigational charts, and SEO is your ability to position
+            your vessel exactly where explorers are sailing.
+            <strong>SERP Shark</strong> gives you the teeth to compete.
+          </p>
+          <p>
+            SEO works by aligning your website's content, structure, and
+            authority with what search engines value most:
+            <strong>relevance, trustworthiness, and user experience</strong>.
+            When done right, it becomes your most powerful, cost-efficient, and
+            long-lasting marketing channel.
+          </p>
+        </div>
+
+        <div class="seo-visual scroll-reveal delay-2">
+          <div class="orbit-ring"><div class="orbit-dot"></div></div>
+          <div class="orbit-ring"></div>
+          <div class="seo-cube-wrap">
+            <div class="cube">
+              <div class="cube-face front">SEO</div>
+              <div class="cube-face back">RANK</div>
+              <div class="cube-face left">GROW</div>
+              <div class="cube-face right">WIN</div>
+              <div class="cube-face top">TRAFFIC</div>
+              <div class="cube-face bottom">LEADS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WHY IT MATTERS CARDS -->
+      <div class="why-grid" style="margin-top: 80px">
+        <div class="why-card scroll-reveal delay-1">
+          <span class="icon">🎯</span>
+          <h3>Intent Targeting</h3>
+          <p>
+            Reach users actively searching for exactly what you offer — zero
+            wasted impressions, maximum intent alignment.
+          </p>
+        </div>
+        <div class="why-card scroll-reveal delay-2">
+          <span class="icon">🔁</span>
+          <h3>Compounding Returns</h3>
+          <p>
+            Unlike paid ads that stop the moment you pause spending, SEO results
+            compound over time into a sustainable traffic engine.
+          </p>
+        </div>
+        <div class="why-card scroll-reveal delay-3">
+          <span class="icon">🌐</span>
+          <h3>Global Reach</h3>
+          <p>
+            Break geographic barriers. SEO makes your brand discoverable to
+            billions of searchers across every corner of the planet.
+          </p>
+        </div>
+        <div class="why-card scroll-reveal delay-4">
+          <span class="icon">📊</span>
+          <h3>Data-Driven</h3>
+          <p>
+            Every SEO decision is backed by measurable data — keyword rankings,
+            click-through rates, user behavior, and ROI tracking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ HOW SEARCH ENGINES WORK ══════════════ -->
+    <section id="how-engines">
+      <div class="engines-inner">
+        <div class="engines-header scroll-reveal">
+          <span class="section-label">The Machine</span>
+          <h2 class="section-title">How Search Engines <span>Work</span></h2>
+          <p class="section-desc">
+            Before you can master SEO, you must understand your opponent. Search
+            engines are sophisticated machines that follow a precise three-stage
+            process to deliver results.
+          </p>
+        </div>
+
+        <div class="pipeline">
+          <div class="pipeline-step">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <h3>🕷️ Crawling — The Discovery Phase</h3>
+              <p>
+                Search engines deploy automated bots called
+                <strong>spiders or crawlers</strong> (Google's is named
+                Googlebot) that continuously traverse the web. Like sharks
+                patrolling vast waters, these bots follow hyperlinks from page
+                to page, discovering new and updated content. Crawl budget — the
+                number of pages a bot will crawl in a given time — is influenced
+                by your site's speed, internal linking structure, and the
+                authority of your domain. A well-architected site ensures every
+                valuable page gets discovered.
+              </p>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <h3>📚 Indexing — The Library Phase</h3>
+              <p>
+                Once a page is crawled, the search engine
+                <strong>analyzes and stores it</strong> in a massive database
+                called the index. During indexing, algorithms evaluate content
+                quality, structure, metadata, images, videos, and semantic
+                relationships. Google's index contains hundreds of billions of
+                pages. Getting indexed correctly means having clear HTML
+                structure, descriptive meta tags, optimized images with alt
+                text, structured data markup, and content that genuinely answers
+                user intent — not just keyword stuffing.
+              </p>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <h3>🏆 Ranking — The Battle Phase</h3>
+              <p>
+                When someone searches, the engine runs a
+                <strong>complex ranking algorithm</strong> — Google alone uses
+                200+ ranking factors — to determine which pages best satisfy
+                that query. Core factors include:
+                <strong>relevance</strong> (does your content match the query?),
+                <strong>authority</strong> (how many quality sites link to
+                you?), <strong>user experience</strong> (Core Web Vitals,
+                mobile-friendliness), <strong>content freshness</strong>, search
+                intent match, E-E-A-T signals (Experience, Expertise,
+                Authoritativeness, Trustworthiness), and many more. The top 3
+                results capture over 75% of all clicks.
+              </p>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">04</div>
+            <div class="step-content">
+              <h3>🔄 Re-Crawling — The Evolution Phase</h3>
+              <p>
+                SEO is never "done." Crawlers
+                <strong>continuously revisit pages</strong> to detect changes —
+                new content, updated information, added backlinks, or technical
+                issues. Pages that consistently publish fresh, high-quality
+                content are crawled more frequently, gaining an edge in dynamic
+                SERPs. This cycle means your SEO strategy must evolve constantly
+                — monitoring algorithm updates, refreshing old content, earning
+                new links, and improving user signals like dwell time and bounce
+                rate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ TYPES OF SEO ══════════════ -->
+    <section id="seo-types">
+      <div class="types-inner">
+        <div class="types-header scroll-reveal">
+          <span class="section-label">The Arsenal</span>
+          <h2 class="section-title">Types of <span>SEO</span></h2>
+          <p class="section-desc">
+            SEO isn't one-dimensional. It's a multi-layered discipline with
+            distinct battlefronts. Master all three to become truly unstoppable.
+          </p>
+        </div>
+
+        <div class="types-tabs">
+          <button class="tab-btn active" data-tab="onpage">On-Page SEO</button>
+          <button class="tab-btn" data-tab="offpage">Off-Page SEO</button>
+          <button class="tab-btn" data-tab="technical">Technical SEO</button>
+        </div>
+
+        <div class="types-panel active" id="panel-onpage">
+          <div class="type-card-big">
+            <div class="type-icon-big">📝</div>
+            <div class="type-info">
+              <h3>On-Page SEO</h3>
+              <p>
+                On-Page SEO refers to all optimizations made
+                <strong>directly within your website's content and HTML</strong
+                >. It's the most direct signal you can send to search engines
+                about what your page is about. This is where you control the
+                narrative — crafting content so valuable, relevant, and
+                well-structured that search engines have no choice but to rank
+                it highly.
+              </p>
+              <ul class="type-list">
+                <li>
+                  Keyword research & strategic placement in titles, headers, and
+                  body
+                </li>
+                <li>
+                  Meta titles & descriptions optimized for click-through rate
+                </li>
+                <li>Header hierarchy (H1 → H6) for content structure</li>
+                <li>Internal linking strategy to distribute page authority</li>
+                <li>Image optimization — file names, alt tags, compression</li>
+                <li>URL structure: clean, descriptive, keyword-rich slugs</li>
+                <li>Content depth, E-E-A-T signals, and semantic coverage</li>
+                <li>Schema markup for rich snippets (FAQ, How-To, Reviews)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="types-panel" id="panel-offpage">
+          <div class="type-card-big">
+            <div class="type-icon-big">🔗</div>
+            <div class="type-info">
+              <h3>Off-Page SEO</h3>
+              <p>
+                Off-Page SEO encompasses everything that happens
+                <strong>outside your website</strong> that influences your
+                rankings. Think of it as your reputation in the digital world.
+                Search engines treat links from other sites as "votes of
+                confidence." The more authoritative and relevant these votes
+                are, the more trustworthy your site appears — and the higher you
+                climb.
+              </p>
+              <ul class="type-list">
+                <li>Link building: earning backlinks from high-DA websites</li>
+                <li>Guest posting on authoritative blogs in your niche</li>
+                <li>
+                  Digital PR: getting featured in news outlets and publications
+                </li>
+                <li>Brand mentions (linked & unlinked) across the web</li>
+                <li>Social media signals and content amplification</li>
+                <li>Influencer outreach and co-marketing partnerships</li>
+                <li>Forum participation and community authority building</li>
+                <li>
+                  Local citations for map pack and local search visibility
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="types-panel" id="panel-technical">
+          <div class="type-card-big">
+            <div class="type-icon-big">⚙️</div>
+            <div class="type-info">
+              <h3>Technical SEO</h3>
+              <p>
+                Technical SEO is the
+                <strong>foundation your entire SEO strategy rests on</strong>.
+                Even the most brilliant content is worthless if search engines
+                can't properly crawl, render, and index your site. Technical SEO
+                ensures your website's infrastructure is flawless — fast,
+                secure, accessible, and perfectly readable by search engine bots
+                and human users alike.
+              </p>
+              <ul class="type-list">
+                <li>Core Web Vitals: LCP, FID/INP, CLS for page experience</li>
+                <li>
+                  Site speed optimization — server, caching, CDN, minification
+                </li>
+                <li>Mobile-first indexing & responsive design compliance</li>
+                <li>HTTPS security & SSL certificate implementation</li>
+                <li>XML sitemap creation and submission to Search Console</li>
+                <li>Robots.txt configuration to control crawl behavior</li>
+                <li>Canonical tags to prevent duplicate content issues</li>
+                <li>Structured data / JSON-LD for enhanced SERP features</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ WHY SEO IS IMPORTANT ══════════════ -->
+    <section id="why-seo">
+      <div class="why-inner">
+        <div class="scroll-reveal">
+          <span class="section-label">The Advantage</span>
+          <h2 class="section-title">Why SEO is <span>Critical</span></h2>
+          <p class="section-desc" style="margin: 0 auto; text-align: center">
+            In a world where 8.5 billion searches happen every single day, SEO
+            is no longer optional — it's the difference between being found and
+            being forgotten.
+          </p>
+        </div>
+
+        <div class="importance-grid">
+          <div class="imp-card delay-1">
+            <span class="imp-num">01</span>
+            <h3>Free, Long-Term Traffic</h3>
+            <p>
+              Unlike PPC ads that bleed your budget 24/7, SEO delivers organic
+              traffic that costs nothing per click. Invest once, reap rewards
+              for years. Top-ranking pages continue earning traffic months and
+              even years after publication.
+            </p>
+          </div>
+          <div class="imp-card delay-2">
+            <span class="imp-num">02</span>
+            <h3>Unmatched Credibility</h3>
+            <p>
+              Users inherently trust organic results more than paid ads. Ranking
+              #1 signals to searchers that Google endorses you as the most
+              relevant, trustworthy source — a level of brand credibility money
+              can't directly buy.
+            </p>
+          </div>
+          <div class="imp-card delay-3">
+            <span class="imp-num">03</span>
+            <h3>Capture Purchase Intent</h3>
+            <p>
+              SEO targets people actively searching with buying intent. Someone
+              Googling "best SEO tools 2024" is ready to convert. You're not
+              interrupting them — you're being exactly where they want you to
+              be, at exactly the right moment.
+            </p>
+          </div>
+          <div class="imp-card delay-1">
+            <span class="imp-num">04</span>
+            <h3>Competitive Domination</h3>
+            <p>
+              Your competitors are investing in SEO right now. Neglect it and
+              you cede ground. Master it and you build an insurmountable moat —
+              organic rankings take competitors months or years to overcome,
+              even with heavy investment.
+            </p>
+          </div>
+          <div class="imp-card delay-2">
+            <span class="imp-num">05</span>
+            <h3>Better User Experience</h3>
+            <p>
+              Modern SEO is inseparable from UX. Fast-loading pages, intuitive
+              navigation, mobile responsiveness, and quality content — these
+              aren't just ranking factors, they're what turns visitors into
+              customers and advocates.
+            </p>
+          </div>
+          <div class="imp-card delay-3">
+            <span class="imp-num">06</span>
+            <h3>Measurable ROI</h3>
+            <p>
+              Every aspect of SEO is trackable — rankings, traffic, conversions,
+              revenue attribution. With Google Analytics, Search Console, and
+              rank trackers, you can see exactly what's working and optimize
+              with surgical precision.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ CTA STRIP ══════════════ -->
+    <section id="cta-strip">
+      <div class="cta-inner scroll-reveal">
+        <h2>
+          Ready to
+          <span
+            style="
+              background: linear-gradient(135deg, var(--sky), var(--accent));
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+            >Dominate</span
+          >
+          Search?
+        </h2>
+        <p>
+          Join thousands of marketers, founders, and creators who've mastered
+          the SERP Shark methodology. The ocean is vast — but with the right
+          strategy, you're the apex predator.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn-primary">Start Learning Free</button>
+          <button class="btn-outline">View SEO Guides</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="img/shark2.png" alt="SERP Shark logo" />
+            <span class="footer-logo-text">SERP SHARK</span>
+          </div>
+          <p>
+            The premier destination for SEO education, strategy, and insights.
+            Dive deep. Rank higher. Dominate search.
+          </p>
+          <div class="footer-social">
+            <a class="soc-btn" href="#" title="Twitter">𝕏</a>
+            <a class="soc-btn" href="#" title="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2025 <span>SERP Shark</span>. All rights reserved. Built for SEO
+          Dominators.
+        </p>
+        <div class="footer-badge">SERP SHARK v1.0 — BITE INTO RANKINGS</div>
+      </div>
+    </footer>
+    <!-- ══════════════ JAVASCRIPT ══════════════ -->
+    <script src="jfiles/one.js"></script>
+  </body>
+</html>

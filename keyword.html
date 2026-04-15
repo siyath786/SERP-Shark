@@ -1,0 +1,1145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SERP Shark – Keyword Research & Content Strategy</title>
+    <link rel="stylesheet" href="css/keyword.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@300;400;600;700;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ══════════════ NAVBAR ══════════════ -->
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">
+        <img src="img/shark2.png" alt="SERP Shark Logo" />
+        <span class="nav-brand">SERP SHARK</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#what-keyword">Keywords</a></li>
+        <li><a href="#tail-compare">Short vs Long</a></li>
+        <li><a href="#how-research">Research</a></li>
+        <li><a href="#search-intent">Intent</a></li>
+        <li><a href="#seo-content">Content</a></li>
+        <li><a href="#cta-strip" class="nav-cta">Get Started</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#what-keyword" class="mob-link">Keywords</a>
+      <a href="#tail-compare" class="mob-link">Short vs Long</a>
+      <a href="#how-research" class="mob-link">Research</a>
+      <a href="#search-intent" class="mob-link">Intent</a>
+      <a href="#seo-content" class="mob-link">Content</a>
+      <a href="#cta-strip" class="mob-link">Get Started</a>
+    </div>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section id="hero">
+      <div class="grid-floor"></div>
+      <div class="ring-wrap">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+      <div class="kw-chips" id="kwChips"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge">Page 02 — Content Strategy</div>
+        <div class="hero-eyebrow">
+          <span></span> Keyword Research & Content <span></span>
+        </div>
+        <h1 class="hero-title">
+          <span class="line1">Find the Words</span>
+          <span class="line2">Own the Search</span>
+        </h1>
+        <p class="hero-sub">
+          Keywords are the DNA of SEO. Master how to research, select, and use
+          them inside content that ranks — and watch your organic traffic
+          transform permanently.
+        </p>
+        <div class="hero-buttons">
+          <button
+            class="btn-primary"
+            onclick="
+              document
+                .getElementById('what-keyword')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            Start With Keywords
+          </button>
+          <button
+            class="btn-outline"
+            onclick="
+              document
+                .getElementById('seo-content')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            Content Strategy
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-count="70">0</span>
+            <div class="stat-label">% Use Long-Tail</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="8">0</span>
+            <div class="stat-label">Billion Daily Searches</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="95">0</span>
+            <div class="stat-label">% Kws Get &lt;10 Searches</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="4">0</span>
+            <div class="stat-label">× More Clicks w/ Intent</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ WHAT IS A KEYWORD ══════════════ -->
+    <section id="what-keyword">
+      <div class="kw-def-grid">
+        <div class="kw-def-text scroll-reveal">
+          <span class="section-label">The Foundation</span>
+          <h2 class="section-title">What is a <span>Keyword</span> in SEO?</h2>
+          <p>
+            A <strong>keyword</strong> in SEO is any word or phrase that a user
+            types into a search engine to find information. It is the bridge
+            between what people are searching for and the content you create to
+            meet that need. Keywords are the compass that guides your entire
+            content strategy.
+          </p>
+          <p>
+            Think of keywords as <strong>signals of intent</strong>. When
+            someone types "best running shoes for flat feet," they're not just
+            searching words — they're expressing a specific need, a stage in
+            their buying journey, and a level of expertise. Great SEO starts by
+            understanding these signals deeply.
+          </p>
+          <p>
+            Search engines match keywords in a query to the most relevant pages
+            in their index. Your job is to create content so well-aligned with a
+            keyword's meaning and intent that Google's algorithm confidently
+            presents your page as the <strong>definitive answer</strong>.
+          </p>
+          <div
+            style="margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px"
+          >
+            <span class="kw-highlight-tag">seed keyword</span>
+            <span class="kw-highlight-tag">focus keyword</span>
+            <span class="kw-highlight-tag">LSI keyword</span>
+            <span class="kw-highlight-tag">target keyword</span>
+            <span class="kw-highlight-tag">head term</span>
+            <span class="kw-highlight-tag">search query</span>
+          </div>
+        </div>
+
+        <div class="search-visual scroll-reveal delay-2">
+          <div class="fake-browser">
+            <div class="browser-bar">
+              <div class="b-dot"></div>
+              <div class="b-dot"></div>
+              <div class="b-dot"></div>
+              <div class="browser-search" id="typeSearch">
+                best seo tools 2025
+              </div>
+            </div>
+            <div class="browser-body">
+              <div class="serp-result highlight">
+                <div class="serp-url">serpshark.com › seo-tools</div>
+                <div class="serp-title">
+                  🏆 10 Best SEO Tools in 2025 — Expert Picks
+                </div>
+                <div class="serp-desc">
+                  Discover the top-rated SEO tools used by experts. Keyword
+                  research, rank tracking, site audits and more...
+                </div>
+              </div>
+              <div class="serp-result">
+                <div class="serp-url">competitor.com › tools</div>
+                <div class="serp-title">Best SEO Software — Reviewed</div>
+                <div class="serp-desc">
+                  A comprehensive list of SEO platforms with pricing comparison
+                  and features breakdown...
+                </div>
+              </div>
+              <div class="serp-result">
+                <div class="serp-url">blog.example.com › guides</div>
+                <div class="serp-title">Top SEO Tools for Beginners</div>
+                <div class="serp-desc">
+                  If you're new to search optimization, these beginner-friendly
+                  tools will help you start ranking...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 10px">
+            <span
+              style="
+                font-family: &quot;Space Mono&quot;, monospace;
+                font-size: 0.65rem;
+                color: #64748b;
+                letter-spacing: 2px;
+              "
+              >KEYWORD DRIVES RANKING POSITION</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ TYPES OF KEYWORDS ══════════════ -->
+    <section id="kw-types">
+      <div class="types-inner-kw">
+        <div class="scroll-reveal">
+          <span class="section-label">The Classification</span>
+          <h2 class="section-title">Types of <span>Keywords</span></h2>
+          <p class="section-desc">
+            Not all keywords are created equal. Understanding the taxonomy of
+            keywords lets you build a balanced strategy that captures traffic at
+            every stage of the funnel.
+          </p>
+        </div>
+        <div class="kw-type-grid">
+          <div class="kw-type-card delay-1">
+            <span class="kw-icon">🌱</span>
+            <h3>Seed Keywords</h3>
+            <p>
+              The most basic, broad terms that define your niche. They're the
+              starting point of any keyword research process — single words or
+              very short phrases with enormous search volume but intense
+              competition.
+            </p>
+            <span class="kw-tag"
+              >Example: "SEO" · "running shoes" · "coffee"</span
+            >
+          </div>
+          <div class="kw-type-card delay-2">
+            <span class="kw-icon">🎯</span>
+            <h3>Short-Tail Keywords</h3>
+            <p>
+              1–2 word phrases that are highly competitive with massive volume.
+              These are the "head terms" — difficult to rank for but powerful
+              when you do. Best suited for established domains with high
+              authority.
+            </p>
+            <span class="kw-tag"
+              >Example: "SEO tools" · "keyword research"</span
+            >
+          </div>
+          <div class="kw-type-card delay-3">
+            <span class="kw-icon">🎣</span>
+            <h3>Long-Tail Keywords</h3>
+            <p>
+              3+ word phrases that are more specific, lower competition, and
+              closer to purchase intent. They make up over 70% of all searches.
+              The goldmine for new sites and niche targeting strategies.
+            </p>
+            <span class="kw-tag"
+              >Example: "best free keyword research tools 2025"</span
+            >
+          </div>
+          <div class="kw-type-card delay-1">
+            <span class="kw-icon">💰</span>
+            <h3>Commercial Keywords</h3>
+            <p>
+              Phrases that signal buying intent — the user is ready to purchase
+              or is comparing products. These drive the highest conversion rates
+              and are prime targets for product and landing pages.
+            </p>
+            <span class="kw-tag"
+              >Example: "buy SEO software" · "best deal"</span
+            >
+          </div>
+          <div class="kw-type-card delay-2">
+            <span class="kw-icon">📚</span>
+            <h3>Informational Keywords</h3>
+            <p>
+              Questions and "how-to" phrases where users seek knowledge. Perfect
+              for blog posts, guides, and educational content. They build
+              topical authority and drive top-of-funnel awareness traffic.
+            </p>
+            <span class="kw-tag"
+              >Example: "what is SEO" · "how to rank on Google"</span
+            >
+          </div>
+          <div class="kw-type-card delay-3">
+            <span class="kw-icon">🧩</span>
+            <h3>LSI Keywords</h3>
+            <p>
+              Latent Semantic Indexing keywords are conceptually related terms
+              that help search engines understand topic context. Using LSI
+              keywords prevents over-optimization and improves semantic
+              relevance.
+            </p>
+            <span class="kw-tag"
+              >Example: For "SEO" → "SERP", "backlinks", "meta tags"</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ SHORT-TAIL vs LONG-TAIL ══════════════ -->
+    <section id="tail-compare">
+      <div class="compare-inner">
+        <div class="compare-header scroll-reveal">
+          <span class="section-label">The Battle</span>
+          <h2 class="section-title">Short-Tail <span>vs</span> Long-Tail</h2>
+          <p class="section-desc">
+            Understanding the difference between these two keyword categories is
+            the first strategic decision every SEO must make. Neither is
+            universally superior — smart SEOs use both.
+          </p>
+        </div>
+        <div class="compare-wrap scroll-reveal delay-2">
+          <div class="compare-card left-card">
+            <span class="compare-chip chip-short">⚡ Short-Tail</span>
+            <h3>Short-Tail Keywords</h3>
+            <p>
+              Broad, 1–2 word terms with massive monthly search volumes —
+              sometimes millions. They bring enormous potential traffic but come
+              with brutal competition. Dominating these requires high domain
+              authority, significant content investment, and time — often 12+
+              months.
+            </p>
+            <ul class="compare-list">
+              <li>Very high search volume (10K–1M+ searches/month)</li>
+              <li>Extremely competitive — dominated by big brands</li>
+              <li>Low conversion rates due to vague intent</li>
+              <li>Slow to rank — months or years to achieve</li>
+              <li>Best for brand awareness and top-of-funnel goals</li>
+              <li>Requires high domain authority to compete</li>
+            </ul>
+            <div class="compare-example">
+              <span>🔍 EXAMPLE KEYWORD</span>
+              <p>"SEO tools"</p>
+            </div>
+          </div>
+          <div class="compare-vs"><span>VS</span></div>
+          <div class="compare-card right-card">
+            <span class="compare-chip chip-long">🎯 Long-Tail</span>
+            <h3>Long-Tail Keywords</h3>
+            <p>
+              Specific, 3+ word phrases with lower individual volume but
+              exceptional intent clarity. A new website targeting the right
+              long-tail keywords can rank in weeks and convert far better than
+              generic terms. They collectively drive the majority of all
+              searches.
+            </p>
+            <ul class="compare-list">
+              <li>Lower search volume (50–2,000 searches/month)</li>
+              <li>Much lower competition — reachable for any site</li>
+              <li>High conversion — intent is crystal clear</li>
+              <li>Faster to rank — sometimes in days or weeks</li>
+              <li>Perfect for new sites and niche targeting</li>
+              <li>70%+ of all Google searches are long-tail</li>
+            </ul>
+            <div class="compare-example">
+              <span>🔍 EXAMPLE KEYWORD</span>
+              <p>"best free keyword research tools for beginners 2025"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ HOW TO DO KEYWORD RESEARCH ══════════════ -->
+    <section id="how-research">
+      <div class="research-inner">
+        <div class="scroll-reveal" style="margin-bottom: 60px">
+          <span class="section-label">The Process</span>
+          <h2 class="section-title">How to Do <span>Keyword Research</span></h2>
+          <p class="section-desc">
+            Keyword research is a structured, repeatable process. Follow these
+            steps and you'll consistently uncover high-value opportunities your
+            competitors have missed.
+          </p>
+        </div>
+        <div class="research-pipeline">
+          <div class="r-step">
+            <div class="r-step-num">01</div>
+            <div class="r-step-body">
+              <h3>🌱 Start With Seed Keywords</h3>
+              <p>
+                Begin by brainstorming the core topics and terms that define
+                your niche. Think about
+                <strong>what your target audience would type</strong> to find
+                your product, service, or content. Write down 10–20 broad "seed"
+                terms — these become the starting point for every branch of your
+                research. Sources include: your product categories, competitor
+                site topics, industry terminology, and customer language from
+                support tickets or reviews.
+              </p>
+            </div>
+          </div>
+          <div class="r-step">
+            <div class="r-step-num">02</div>
+            <div class="r-step-body">
+              <h3>🔍 Expand With Keyword Tools</h3>
+              <p>
+                Enter your seed keywords into research tools like Ahrefs,
+                SEMrush, or Google Keyword Planner. These tools
+                <strong
+                  >expand your seeds into hundreds or thousands of related
+                  keywords</strong
+                >
+                — revealing search volumes, competition scores (keyword
+                difficulty), cost-per-click data, and trend history. Also use
+                Google's autocomplete, "People Also Ask," and "Related Searches"
+                sections as free keyword goldmines that reveal real user
+                language.
+              </p>
+            </div>
+          </div>
+          <div class="r-step">
+            <div class="r-step-num">03</div>
+            <div class="r-step-body">
+              <h3>📊 Analyze Search Volume & Difficulty</h3>
+              <p>
+                For each keyword candidate, evaluate two key metrics:
+                <strong>Search Volume</strong> (how many people search it
+                monthly) and <strong>Keyword Difficulty (KD)</strong> (how hard
+                it is to rank). The sweet spot is finding keywords with decent
+                volume but manageable competition. New sites should target KD
+                scores under 20–30. Use these metrics to prioritize — don't
+                chase high-volume keywords you cannot realistically rank for in
+                your current domain authority tier.
+              </p>
+            </div>
+          </div>
+          <div class="r-step">
+            <div class="r-step-num">04</div>
+            <div class="r-step-body">
+              <h3>🎯 Understand Search Intent</h3>
+              <p>
+                Before adding any keyword to your strategy,
+                <strong>Google it yourself</strong>. Look at what type of
+                content dominates the top 10: articles, product pages, videos,
+                tools? This tells you the <em>intent</em> behind the keyword. A
+                SERP full of how-to guides means you need an informational
+                article. A SERP full of product pages means commercial intent.
+                Matching your content format to intent is non-negotiable for
+                ranking success.
+              </p>
+            </div>
+          </div>
+          <div class="r-step">
+            <div class="r-step-num">05</div>
+            <div class="r-step-body">
+              <h3>🗂️ Group Into Topic Clusters</h3>
+              <p>
+                Organize your keywords into <strong>topic clusters</strong> —
+                groups of related keywords that can be addressed by a single
+                pillar page and supporting cluster articles. This structure
+                signals topical authority to search engines. For example, a
+                pillar page on "Keyword Research" would link to clusters like
+                "long-tail keywords," "keyword tools," "search intent," etc.
+                This approach dramatically improves ranking power across your
+                entire site architecture.
+              </p>
+            </div>
+          </div>
+          <div class="r-step">
+            <div class="r-step-num">06</div>
+            <div class="r-step-body">
+              <h3>📋 Build Your Priority Keyword List</h3>
+              <p>
+                After research and grouping,
+                <strong>assign each keyword a priority score</strong> based on:
+                business relevance (how well it aligns with your offerings),
+                search volume, keyword difficulty, and current domain authority.
+                Sort by opportunity score and create a content calendar that
+                systematically targets your highest-priority keywords first,
+                while building authority on easier terms to support future
+                ranking of harder targets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ KEYWORD RESEARCH TOOLS ══════════════ -->
+    <section id="kw-tools">
+      <div class="tools-inner">
+        <div class="scroll-reveal">
+          <span class="section-label">The Arsenal</span>
+          <h2 class="section-title">Keyword Research <span>Tools</span></h2>
+          <p class="section-desc">
+            These tools are the weapons of every professional SEO. Each has
+            unique strengths — know your arsenal and choose the right tool for
+            each task.
+          </p>
+        </div>
+        <div class="tools-grid">
+          <div class="tool-card delay-1">
+            <span class="tool-logo">🔬</span>
+            <h3>Google Keyword Planner</h3>
+            <p>
+              The original keyword tool directly from Google's Ads platform.
+              Provides real search volume data, competition levels, and bid
+              estimates. Essential for verifying volume before targeting any
+              keyword.
+            </p>
+            <span class="tool-badge free">FREE</span>
+          </div>
+          <div class="tool-card delay-2">
+            <span class="tool-logo">🦅</span>
+            <h3>Ahrefs Keywords Explorer</h3>
+            <p>
+              The industry gold standard. Offers keyword difficulty scores,
+              traffic potential, click rates, and a massive global keyword
+              database. The "Parent Topic" feature helps identify which keyword
+              to actually target for a given topic.
+            </p>
+            <span class="tool-badge paid">PAID</span>
+          </div>
+          <div class="tool-card delay-3">
+            <span class="tool-logo">⚡</span>
+            <h3>SEMrush Keyword Magic</h3>
+            <p>
+              A colossal database of 25+ billion keywords. Offers intent
+              classification, trend data, and competitor gap analysis. The
+              Keyword Magic Tool generates thousands of related keyword
+              variations from any seed term.
+            </p>
+            <span class="tool-badge paid">PAID</span>
+          </div>
+          <div class="tool-card delay-1">
+            <span class="tool-logo">🚀</span>
+            <h3>Ubersuggest</h3>
+            <p>
+              Neil Patel's freemium tool. Great for beginners — gives keyword
+              ideas, volume, difficulty, and content suggestions. The free tier
+              provides enough data to start a meaningful keyword strategy
+              without any budget.
+            </p>
+            <span class="tool-badge freemium">FREEMIUM</span>
+          </div>
+          <div class="tool-card delay-2">
+            <span class="tool-logo">🌊</span>
+            <h3>AnswerThePublic</h3>
+            <p>
+              Visualizes every question, comparison, and preposition related to
+              any keyword. Exceptional for finding informational content
+              opportunities. Reveals exactly what questions your audience is
+              asking in natural language.
+            </p>
+            <span class="tool-badge freemium">FREEMIUM</span>
+          </div>
+          <div class="tool-card delay-3">
+            <span class="tool-logo">📡</span>
+            <h3>Google Search Console</h3>
+            <p>
+              Shows exactly what search queries are driving impressions and
+              clicks to YOUR site. Invaluable for finding
+              high-impression/low-click keywords ripe for optimization. A
+              must-use tool alongside any research tool.
+            </p>
+            <span class="tool-badge free">FREE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ HOW TO CHOOSE THE RIGHT KEYWORD ══════════════ -->
+    <section id="choose-kw">
+      <div class="choose-inner">
+        <div class="choose-grid">
+          <div class="choose-text scroll-reveal">
+            <span class="section-label">The Decision</span>
+            <h2 class="section-title">
+              How to Choose the <span>Right Keyword</span>
+            </h2>
+            <p>
+              Choosing the right keyword is equal parts science and strategy.
+              It's not just about picking the highest-volume term — it's about
+              identifying where
+              <strong>your realistic ranking ability</strong> meets
+              <strong>genuine audience demand</strong> meets
+              <strong>business relevance</strong>.
+            </p>
+            <p>
+              Use this proven scoring framework to evaluate any keyword before
+              committing your content resources to targeting it. A keyword that
+              scores well across all three dimensions is a high-priority target.
+            </p>
+            <div class="kw-formula">
+              <div class="formula-title">⚡ Keyword Opportunity Formula</div>
+              <div class="formula-row">
+                <span class="formula-pill f-high">High Relevance</span>
+                <span class="f-op">+</span>
+                <span class="formula-pill f-low">Low KD Score</span>
+                <span class="f-op">+</span>
+                <span class="formula-pill f-match">Intent Match</span>
+              </div>
+              <div class="formula-row">
+                <span class="f-eq">= </span>
+                <span class="f-result">🎯 Perfect Target Keyword</span>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-reveal delay-2">
+            <span
+              class="section-label"
+              style="margin-bottom: 22px; display: block"
+              >Scoring a Keyword</span
+            >
+            <div class="kw-metrics">
+              <div class="metric-row">
+                <div class="metric-label">
+                  <span>Business Relevance</span><span>95%</span>
+                </div>
+                <div class="metric-bar">
+                  <div
+                    class="metric-fill"
+                    data-width="95"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+              <div class="metric-row">
+                <div class="metric-label">
+                  <span>Search Volume (Scaled)</span><span>72%</span>
+                </div>
+                <div class="metric-bar">
+                  <div
+                    class="metric-fill"
+                    data-width="72"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+              <div class="metric-row">
+                <div class="metric-label">
+                  <span>Achievable Difficulty</span><span>81%</span>
+                </div>
+                <div class="metric-bar">
+                  <div
+                    class="metric-fill"
+                    data-width="81"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+              <div class="metric-row">
+                <div class="metric-label">
+                  <span>Intent Alignment</span><span>90%</span>
+                </div>
+                <div class="metric-bar">
+                  <div
+                    class="metric-fill"
+                    data-width="90"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+              <div class="metric-row">
+                <div class="metric-label">
+                  <span>Conversion Potential</span><span>85%</span>
+                </div>
+                <div class="metric-bar">
+                  <div
+                    class="metric-fill"
+                    data-width="85"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+              <div class="metric-row">
+                <div class="metric-label">
+                  <span>Trend (Rising?)</span><span>68%</span>
+                </div>
+                <div class="metric-bar">
+                  <div
+                    class="metric-fill"
+                    data-width="68"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                margin-top: 30px;
+                padding: 18px 22px;
+                background: rgba(56, 189, 248, 0.06);
+                border: 1px solid rgba(56, 189, 248, 0.15);
+                border-radius: 12px;
+              "
+            >
+              <div
+                style="
+                  font-family: &quot;Space Mono&quot;, monospace;
+                  font-size: 0.68rem;
+                  color: var(--accent);
+                  letter-spacing: 2px;
+                  margin-bottom: 10px;
+                "
+              >
+                📌 PRO TIPS
+              </div>
+              <p style="color: #94a3b8; font-size: 0.85rem; line-height: 1.7">
+                Target keywords where you can realistically reach page 1 within
+                3–6 months. Prioritize relevance over volume. A 200 search/month
+                keyword that converts at 15% beats a 10,000 search/month keyword
+                that converts at 0.1%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ SEARCH INTENT ══════════════ -->
+    <section id="search-intent">
+      <div class="intent-inner">
+        <div class="intent-header scroll-reveal">
+          <span class="section-label">The Psychology</span>
+          <h2 class="section-title">What is <span>Search Intent?</span></h2>
+          <p class="section-desc" style="margin: 0 auto; text-align: center">
+            Search intent is the <em>why</em> behind every search query.
+            Google's #1 priority is matching content to intent. Misalign your
+            content with intent — and even the best SEO won't save your
+            rankings.
+          </p>
+        </div>
+        <div class="intent-grid">
+          <div class="intent-card delay-1">
+            <span class="intent-emoji">📖</span>
+            <h3>Informational Intent</h3>
+            <span class="intent-sub">I want to learn something</span>
+            <p>
+              The user is in research mode — seeking knowledge, answers,
+              definitions, or how-to instructions. This is the most common type
+              of search intent. Content should educate, inform, and build trust.
+              Perfect for blog posts, guides, tutorials, and FAQs.
+            </p>
+            <div class="intent-example">
+              "What is keyword difficulty?" · "How to write meta descriptions" ·
+              "Why is SEO important?"
+            </div>
+          </div>
+          <div class="intent-card delay-2">
+            <span class="intent-emoji">🧭</span>
+            <h3>Navigational Intent</h3>
+            <span class="intent-sub">I want to go somewhere specific</span>
+            <p>
+              The user already knows the destination — they're trying to
+              navigate to a specific website, brand, or page. Ranking for
+              competitor brand navigational keywords can capture traffic from
+              users comparing options, but primarily you want to own your own
+              branded navigational searches.
+            </p>
+            <div class="intent-example">
+              "Ahrefs login" · "Google Search Console" · "SERP Shark blog"
+            </div>
+          </div>
+          <div class="intent-card delay-3">
+            <span class="intent-emoji">💳</span>
+            <h3>Transactional Intent</h3>
+            <span class="intent-sub">I want to do or buy something</span>
+            <p>
+              The user is ready to take action — purchase, sign up, download, or
+              book. These keywords have the highest commercial value and
+              conversion rates. Content should remove friction, build
+              confidence, and have clear CTAs. Target with product pages,
+              landing pages, and offer-driven content.
+            </p>
+            <div class="intent-example">
+              "Buy SEMrush subscription" · "Download free SEO checklist" · "Sign
+              up for Ahrefs trial"
+            </div>
+          </div>
+          <div class="intent-card delay-4">
+            <span class="intent-emoji">🔎</span>
+            <h3>Commercial Investigation</h3>
+            <span class="intent-sub">I want to compare before deciding</span>
+            <p>
+              The user is in the consideration phase — researching options,
+              comparing products, reading reviews. They're nearly ready to buy
+              but need reassurance. Target with comparison articles, "best X"
+              roundups, review content, and versus pages. These keywords often
+              have the best balance of volume and conversion potential.
+            </p>
+            <div class="intent-example">
+              "Ahrefs vs SEMrush 2025" · "Best keyword tools" · "Ubersuggest
+              review"
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ HOW TO WRITE SEO-FRIENDLY CONTENT ══════════════ -->
+    <section id="seo-content">
+      <div class="content-inner">
+        <div class="scroll-reveal" style="margin-bottom: 50px">
+          <span class="section-label">The Craft</span>
+          <h2 class="section-title">
+            How to Write <span>SEO-Friendly Content</span>
+          </h2>
+          <p class="section-desc">
+            Rankings are earned by content that genuinely serves the reader
+            while speaking the language of search engines. These are the
+            principles that separate content that ranks from content that
+            disappears.
+          </p>
+        </div>
+        <div class="content-grid">
+          <div class="content-tips">
+            <div class="tip-item delay-1">
+              <div class="tip-num">01</div>
+              <div class="tip-body">
+                <h4>Target One Primary Keyword Per Page</h4>
+                <p>
+                  Each piece of content should have one clearly defined focus
+                  keyword that appears naturally in your H1, first 100 words, a
+                  subheading, and the meta title/description. Avoid "keyword
+                  stuffing" — modern Google penalizes unnatural density. Aim for
+                  1–2% keyword density and use natural variations throughout.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item delay-2">
+              <div class="tip-body tip-item-no-num">
+                <div class="tip-num">02</div>
+                <div class="tip-body">
+                  <h4>Craft a Magnetic Title Tag (Under 60 chars)</h4>
+                  <p>
+                    Your title tag is your billboard on the SERP. Include the
+                    focus keyword as close to the front as possible, make it
+                    compelling enough to earn the click, and keep it under 60
+                    characters to avoid truncation. A great title balances
+                    keyword placement with emotional appeal and clarity of
+                    value.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tip-item delay-3">
+              <div class="tip-num">03</div>
+              <div class="tip-body">
+                <h4>Structure With Header Hierarchy (H1→H6)</h4>
+                <p>
+                  Use a single H1 containing your focus keyword. Break content
+                  into logical sections with H2s (main sections) and H3s
+                  (subsections). This hierarchy helps Google understand your
+                  content structure and helps users scan for what they need —
+                  reducing bounce rate and improving dwell time, both positive
+                  ranking signals.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item delay-4">
+              <div class="tip-num">04</div>
+              <div class="tip-body">
+                <h4>Write for Search Intent, Not Word Count</h4>
+                <p>
+                  Match your content format to what Google already rewards for
+                  your target keyword. If top-ranking pages are 1,500-word
+                  guides, write a superior 2,000-word guide. If they're
+                  listicles, create the most comprehensive list. Word count
+                  should be a byproduct of thoroughly answering the query — not
+                  an arbitrary target.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item delay-5">
+              <div class="tip-num">05</div>
+              <div class="tip-body">
+                <h4>Optimize Meta Description for CTR</h4>
+                <p>
+                  While meta descriptions don't directly impact rankings, they
+                  are your conversion copy on the SERP — influencing whether
+                  users click your result. Include the focus keyword, a clear
+                  value proposition, and a call-to-action. Keep it under 155
+                  characters. Higher CTR sends positive engagement signals back
+                  to Google.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item delay-6">
+              <div class="tip-num">06</div>
+              <div class="tip-body">
+                <h4>Use Internal Links Strategically</h4>
+                <p>
+                  Link each new piece of content to 3–5 relevant existing pages
+                  using descriptive anchor text. Internal links distribute "link
+                  equity" (ranking power) across your site, help Google discover
+                  and index new pages faster, and guide readers deeper into your
+                  content ecosystem — reducing bounce rate and increasing
+                  session value.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item delay-1">
+              <div class="tip-num">07</div>
+              <div class="tip-body">
+                <h4>Add Semantic Keywords & Entities</h4>
+                <p>
+                  Modern SEO is semantic — Google understands topics, not just
+                  exact match keywords. Include synonyms, related terms, and
+                  authoritative entities (people, places, brands, events) that
+                  contextually relate to your topic. Tools like Clearscope,
+                  SurferSEO, or NeuronWriter identify which semantic terms
+                  top-ranking pages include.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item delay-2">
+              <div class="tip-num">08</div>
+              <div class="tip-body">
+                <h4>Demonstrate E-E-A-T Signals</h4>
+                <p>
+                  Google evaluates Experience, Expertise, Authoritativeness, and
+                  Trustworthiness. Include an author bio with credentials, cite
+                  reputable sources, show first-hand experience with specific
+                  examples, link to authoritative external sources, and keep
+                  your content regularly updated. For YMYL (health, finance,
+                  legal) topics, E-E-A-T is absolutely critical.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-mockup scroll-reveal delay-3">
+            <div class="mockup-topbar">
+              <div class="b-dot" style="background: #ff5f57"></div>
+              <div class="b-dot" style="background: #febc2e"></div>
+              <div class="b-dot" style="background: #28c840"></div>
+              <span
+                style="
+                  font-family: &quot;Space Mono&quot;, monospace;
+                  font-size: 0.65rem;
+                  color: #64748b;
+                  margin-left: 8px;
+                  letter-spacing: 1px;
+                "
+                >seo-friendly-article.html</span
+              >
+            </div>
+            <div class="mockup-body">
+              <div class="mock-meta">
+                ✅ Title Tag: 58 chars · H1 contains keyword
+              </div>
+              <div class="mock-h1">How to Do Keyword Research in 2025</div>
+              <div
+                class="mock-meta"
+                style="color: var(--sky); margin-bottom: 12px"
+              >
+                🎯 Focus Keyword Detected in First 100 Words
+              </div>
+              <div class="mock-intro w90"></div>
+              <div class="mock-intro w80"></div>
+              <div
+                class="mock-intro"
+                style="
+                  width: 40%;
+                  background: rgba(0, 229, 255, 0.2);
+                  border-radius: 4px;
+                "
+              ></div>
+              <div class="mock-h2">Step 1: Start with Seed Keywords</div>
+              <div class="mock-para w90" style="width: 90%"></div>
+              <div class="mock-para" style="width: 75%"></div>
+              <div class="mock-kw-highlight" style="width: 55%"></div>
+              <div class="mock-img">
+                [ Optimized Image · Alt: "keyword research process diagram" ]
+              </div>
+              <div class="mock-h2">Step 2: Use Research Tools</div>
+              <div class="mock-para" style="width: 88%"></div>
+              <div class="mock-para" style="width: 70%"></div>
+              <div class="mock-para" style="width: 80%"></div>
+              <div
+                style="
+                  margin-top: 16px;
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 6px;
+                "
+              >
+                <span
+                  style="
+                    font-size: 0.62rem;
+                    font-family: &quot;Space Mono&quot;, monospace;
+                    padding: 3px 8px;
+                    background: rgba(56, 189, 248, 0.08);
+                    border: 1px solid rgba(56, 189, 248, 0.15);
+                    border-radius: 4px;
+                    color: var(--sky);
+                  "
+                  >Internal Link ↗</span
+                >
+                <span
+                  style="
+                    font-size: 0.62rem;
+                    font-family: &quot;Space Mono&quot;, monospace;
+                    padding: 3px 8px;
+                    background: rgba(56, 189, 248, 0.08);
+                    border: 1px solid rgba(56, 189, 248, 0.15);
+                    border-radius: 4px;
+                    color: var(--sky);
+                  "
+                  >Internal Link ↗</span
+                >
+                <span
+                  style="
+                    font-size: 0.62rem;
+                    font-family: &quot;Space Mono&quot;, monospace;
+                    padding: 3px 8px;
+                    background: rgba(34, 197, 94, 0.08);
+                    border: 1px solid rgba(34, 197, 94, 0.2);
+                    border-radius: 4px;
+                    color: #4ade80;
+                  "
+                  >External Cite ↗</span
+                >
+              </div>
+              <div
+                style="
+                  margin-top: 18px;
+                  padding: 12px 14px;
+                  background: rgba(56, 189, 248, 0.04);
+                  border: 1px solid rgba(56, 189, 248, 0.12);
+                  border-radius: 8px;
+                "
+              >
+                <div
+                  style="
+                    font-family: &quot;Space Mono&quot;, monospace;
+                    font-size: 0.62rem;
+                    color: #64748b;
+                    letter-spacing: 1px;
+                    margin-bottom: 8px;
+                  "
+                >
+                  SEO HEALTH SCORE
+                </div>
+                <div class="score-bar">
+                  <span class="score-label">Readability</span>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 88%"></div>
+                  </div>
+                  <span class="score-pct">88%</span>
+                </div>
+                <div class="score-bar" style="margin-top: 8px">
+                  <span class="score-label">Keyword Use</span>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 92%"></div>
+                  </div>
+                  <span class="score-pct">92%</span>
+                </div>
+                <div class="score-bar" style="margin-top: 8px">
+                  <span class="score-label">E-E-A-T Signals</span>
+                  <div class="score-track">
+                    <div class="score-fill" style="width: 80%"></div>
+                  </div>
+                  <span class="score-pct">80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- ══════════════ CTA STRIP ══════════════ -->
+    <section id="cta-strip">
+      <div class="cta-inner scroll-reveal">
+        <h2>
+          Ready to Find Your
+          <span
+            style="
+              background: linear-gradient(135deg, var(--sky), var(--accent));
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+            >Winning Keywords?</span
+          >
+        </h2>
+        <p>
+          You now have the complete keyword research and content strategy
+          playbook. Apply these principles consistently and watch your organic
+          traffic multiply. The search ocean is vast — be the shark, not the
+          bait.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn-primary">Start Keyword Research</button>
+          <button class="btn-outline">Explore More SEO Guides</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="img/shark2.png" alt="SERP Shark" />
+            <span class="footer-logo-text">SERP SHARK</span>
+          </div>
+          <p>
+            The premier destination for SEO education, strategy, and insights.
+            Dive deep. Rank higher. Dominate search.
+          </p>
+          <div class="footer-social">
+            <a class="soc-btn" href="#" title="Twitter">𝕏</a>
+            <a class="soc-btn" href="#" title="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Learn SEO</h4>
+          <ul>
+            <li><a href="index.html">SEO Fundamentals</a></li>
+            <li><a href="keyword.html">Keyword Research</a></li>
+            <li><a href="#">Link Building</a></li>
+            <li><a href="#">Technical SEO</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2025 <span>SERP Shark</span>. All rights reserved. Built for SEO
+          Dominators.
+        </p>
+        <div class="footer-badge">
+          SERP SHARK v1.0 — PAGE 02: KEYWORD RESEARCH
+        </div>
+      </div>
+    </footer>
+    <script src="jfiles/keyword.js"></script>
+  </body>
+</html>
